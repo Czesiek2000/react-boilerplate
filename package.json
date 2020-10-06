@@ -1,11 +1,14 @@
 {
+  "homepage": "http://Czesiek2000.github.io/react-boilerplate",
   "name": "react-boilerplate",
   "version": "1.0.0",
   "description": "Simple react boilerplate",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode=development --open --hot",
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "keywords": [],
   "author": "",
@@ -26,5 +29,8 @@
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
